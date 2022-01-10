@@ -39,7 +39,7 @@ Sub HW2()
 
             If (ws.Cells(i - 1, 1).Value <> ws.Cells(i, 1).Value) Then
                 openingPrice = ws.Cells(i, 3).Value
-            Else If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
+            ElseIf ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
                 ticker = ws.Cells(i, 1).Value
 
                 ws.Range("I" & TickerReportingRow).Value = ticker
