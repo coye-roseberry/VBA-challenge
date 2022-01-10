@@ -2,14 +2,6 @@ Sub HW2_easy_solution()
 
     For Each ws In Worksheets
 
-        'Sort the Worksheet
-        With ActiveSheet.Sort
-            .SortFields.Add Key:=Range("A1"), Order:=xlAscending
-            .SortFields.Add Key:=Range("B1"), Order:=xlAscending
-            .SetRange Range("A:G")
-            .Header = xlYes
-            .Apply
-        End With
 
         'Create Variables
 
